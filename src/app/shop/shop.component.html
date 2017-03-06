@@ -1,0 +1,5 @@
+<h2>Shop</h2>
+
+<div *ngFor="let album of albums" click="goToDetailPage(album)">
+  <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
+</div>
