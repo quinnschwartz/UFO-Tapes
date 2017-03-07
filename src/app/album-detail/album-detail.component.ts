@@ -16,7 +16,8 @@ export class AlbumDetailComponent implements OnInit {
   albumId: string;
   albumToDisplay: FirebaseObjectObservable<Album>;
 
-  constructor(private route: ActivatedRoute,
+  constructor(
+    private route: ActivatedRoute,
     private location: Location,
     private albumService: AlbumService
   ) { }
