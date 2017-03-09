@@ -20,16 +20,40 @@
   </div>
 
   <div>
-    <label>Album Cover (Enter URL Path for Image):</label>
-    <br>
-    <input #newCover>
-  </div>
-
-  <div>
     <label>Album Price:</label>
     <br>
     <input #newPrice>
   </div>
 
+  <div>
+    <label>Album Cover (Enter URL Path for Image):</label>
+    <br>
+    <input #newCover>
+  </div>
+
   <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCover.value, newPrice.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCover.value=''; newPrice.value=''">Add</button>
+</div>
+
+<h3>Add New Artist to Site</h3>
+<div>
+  <div>
+    <label>Artist Name:</label>
+    <br>
+    <input #newArtist>
+  </div>
+
+  <div>
+    <label>Artist Bio:</label>
+    <br>
+    <input #newBio>
+  </div>
+
+  <div>
+    <label>Artist Photo:</label>
+    <br>
+    <textarea #newPhoto></textarea>
+  </div>
+
+
+  <button (click)="submitForm2(newArtist.value, newBio.value, newPhoto.value); newArtist.value=''; newBio.value=''; newPhoto.value=''">Add</button>
 </div>

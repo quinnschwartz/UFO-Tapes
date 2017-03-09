@@ -12,6 +12,10 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 // import { FirebaseApp } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
+import { ShowsComponent } from './shows/shows.component';
+import { ContactComponent } from './contact/contact.component';
+import { ArtistsComponent } from './artists/artists.component';
+import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +31,11 @@ export const firebaseConfig = {
     AboutComponent,
     ShopComponent,
     AlbumDetailComponent,
-    AdminComponent
+    AdminComponent,
+    ShowsComponent,
+    ContactComponent,
+    ArtistsComponent,
+    ArtistDetailComponent
   ],
   imports: [
     BrowserModule,

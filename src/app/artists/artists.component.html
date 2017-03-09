@@ -1,0 +1,6 @@
+<h2>Artists</h2>
+
+<div *ngFor="let artist of artists | async">
+  <h3 (click)="goToDetailPage(artist)"><img src="{{artist.photo}}" alt="band photo">
+    <br><em>{{artist.name}}</em></h3>
+</div>
