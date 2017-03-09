@@ -3,3 +3,8 @@
   <h4>{{(artistToDisplay| async)?.name}}</h4>
   <p>{{(artistToDisplay| async)?.bio}}</p>
 </div>
+
+<div *ngFor="let album of albums | async">
+  <h3 (click)="goToDetailPage(album)"><img src="{{album.cover}}" alt="album cover">
+    <br><em>{{album.title}}</em></h3>
+</div>
