@@ -1,5 +1,6 @@
 <h2>Shop</h2>
 
 <div *ngFor="let album of albums | async">
-  <h3 (click)="goToDetailPage(album)"><em>{{album.title}}</em> by {{album.artist}}</h3>
+  <h3 (click)="goToDetailPage(album)"><img src="{{album.cover}}" alt="album art">
+    <br><em>{{album.title}}</em> by {{album.artist}}</h3>
 </div>

@@ -4,7 +4,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class AlbumService {
+
   albums: FirebaseListObservable<any[]>;
+  
   constructor(private angularFire: AngularFire) {
   this.albums = angularFire.database.list('albums');
  }

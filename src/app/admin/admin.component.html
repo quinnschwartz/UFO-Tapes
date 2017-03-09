@@ -18,5 +18,18 @@
     <br>
     <textarea #newDescription></textarea>
   </div>
-  <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+
+  <div>
+    <label>Album Cover (Enter URL Path for Image):</label>
+    <br>
+    <input #newCover>
+  </div>
+
+  <div>
+    <label>Album Price:</label>
+    <br>
+    <input #newPrice>
+  </div>
+
+  <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newCover.value, newPrice.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newCover.value=''; newPrice.value=''">Add</button>
 </div>

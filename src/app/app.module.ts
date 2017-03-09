@@ -10,6 +10,7 @@ import { ShopComponent } from './shop/shop.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+// import { FirebaseApp } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
