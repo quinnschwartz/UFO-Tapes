@@ -16,6 +16,7 @@ import { ShowsComponent } from './shows/shows.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
+import { AlertModule } from 'ngx-bootstrap';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -42,7 +43,8 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     routing,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

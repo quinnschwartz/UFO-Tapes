@@ -1,21 +1,49 @@
+<alert type="success">hello</alert>
+
 <!-- Navbar -->
-<h1>
-  {{title}}
-</h1>
+<div class="wrapper">
 
-<a routerLink=""><img src="assets/images/ufo.png" alt="logo"></a>
+  <header>
 
-<ul>
-  <li><a routerLink="artists">Artists</a></li>
-  <li><a routerLink="shop">Shop</a></li>
-  <li><a routerLink="shows">Shows</a></li>
-  <li><a routerLink="about">About</a></li>
-  <li><a routerLink="contact">Contact</a></li>
-</ul>
+    <nav class="top">
 
-<!-- page content -->
-<router-outlet></router-outlet>
+      <a class="home" routerLink=""><img class="logo" src="assets/images/ufo.png" alt="logo"></a>
 
-<footer>
-  <a routerLink="admin">Admin</a>
-</footer>
+      <h1>
+        {{title}}
+      </h1>
+
+      <a class="cart"><img src="assets/images/cart.png" alt="shopping cart"></a>
+
+    </nav>
+
+    <nav class="bottom">
+
+      <ul>
+        <li><a routerLink="artists">Artists</a></li>
+        <li><a routerLink="shop">Shop</a></li>
+        <li><a routerLink="shows">Shows</a></li>
+        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="contact">Contact</a></li>
+
+        <ul class="social-media">
+          <li><a href="#"><img src="assets/images/facebook.png" alt="facebook icon"></a></li>
+          <li><a href="#"><img src="assets/images/instagram.png" alt="instagram icon"></a></li>
+          <li><a href="#"><img src="assets/images/youtube.png" alt="youtube icon"></a></li>
+        </ul>
+      </ul>
+
+
+    </nav>
+
+  </header>
+
+
+  <!-- page content -->
+  <router-outlet></router-outlet>
+
+  <footer>
+    <a routerLink="admin">Admin</a>
+  </footer>
+
+</div>
